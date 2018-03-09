@@ -44,7 +44,7 @@ Add ___bitcore-opcodes___ as a dependency in ~/mynode/bitcore-node.json
 }
 ```
 
-Start bitcore-node, then you can access the service with `http://localhost:3001/stampservice`
+Start bitcore-node, then you can access the service with `http://localhost:3001/opcodes`
 
 ## API HTTP Endpoints
 We can support btc mainnet, testnet3 and regtest
@@ -58,7 +58,7 @@ Resource | Method | Request Object | Return Object
 
 * Usage:
 ```bash
-curl http://localhost:3001/stampservice/hash/444f4350524f4f465efa245c88af3bc0bf9e4392976cedafd9a0de8d3f737ba0f48231b0f9262110
+curl http://localhost:3001/opcodes/hash/444f4350524f4f465efa245c88af3bc0bf9e4392976cedafd9a0de8d3f737ba0f48231b0f9262110
 ```
 
 This would return (for testnet):
