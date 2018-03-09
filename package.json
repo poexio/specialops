@@ -1,5 +1,33 @@
 {
-  "name": "stampservice",
+  "name": "@poexio/bitcore-opcodes",
+  "version": "0.1.0",
+  "description": "OP_RETURN web service for bitcore-node",
+  "scripts": {
+    "docs": "jsdoc -d docs -R README.md lib",
+    "test": "standard 'lib/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/poexio/bitcore-opcodes.git"
+  },
+  "author": "PoEx Co., Ltd",
+  "license": "MIT",
+  "keywords": [
+    "op_return",
+    "blockchain",
+    "bitcore"
+  ],
+  "main": "lib",
   "bitcoreNode": "lib",
-  "version": "1.0.0"
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/poexio/bitcore-opcodes/issues"
+  },
+  "homepage": "https://github.com/poexio/bitcore-opcodes#readme",
+  "devDependencies": {
+    "jsdoc": "^3.5.5",
+    "standard": "^11.0.0"
+  }
 }
