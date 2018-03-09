@@ -38,7 +38,7 @@ Add ___bitcore-opcodes___ as a dependency in ~/mynode/bitcore-node.json
     "transaction",
     "web",
     "insight-api",
-    "bitcore-opcodes"
+    "@poexio/bitcore-opcodes"
   ],
   "datadir": "./data"
 }
