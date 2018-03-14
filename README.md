@@ -50,11 +50,11 @@ Start bitcore-node, then you can access the service with `http://localhost:3001/
 We can support btc mainnet, testnet3 and regtest
 
 ### Hash
-Get the transactions that contain the opcodes.
+Get the transactions that contain the metadata.
 
 Resource | Method | Request Object | Return Object
 -------- | -------|----------------|---------------
-/hash/:hash[?limit=1] | GET | [OP_RETURN data](https://bitcore.io/api/lib/transaction#Transaction+addData) | Array
+/metadata/:hex[?limit=1] | GET | [OP_RETURN data](https://bitcore.io/api/lib/transaction#Transaction+addData) | Array
 
 NOTE:
 
@@ -62,8 +62,8 @@ Range of limit: [1, 100], default: 10
 
 * Usage:
 ```bash
-curl http://localhost:3001/opcodes/hash/444f4350524f4f465efa245c88af3bc0bf9e4392976cedafd9a0de8d3f737ba0f48231b0f9262110
-curl http://localhost:3001/opcodes/hash/444f4350524f4f465efa245c88af3bc0bf9e4392976cedafd9a0de8d3f737ba0f48231b0f9262110?limit=1
+curl http://localhost:3001/opcodes/metadata/444f4350524f4f465efa245c88af3bc0bf9e4392976cedafd9a0de8d3f737ba0f48231b0f9262110
+curl http://localhost:3001/opcodes/metadata/444f4350524f4f465efa245c88af3bc0bf9e4392976cedafd9a0de8d3f737ba0f48231b0f9262110?limit=1
 ```
 
 This would return (for testnet):
