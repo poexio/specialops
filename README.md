@@ -54,7 +54,7 @@ Get the transactions that contain the metadata.
 
 Resource | Method | Request Object | Return Object
 -------- | -------|----------------|---------------
-/metadata/:hex[?limit=1] | GET | [OP_RETURN data](https://bitcore.io/api/lib/transaction#Transaction+addData) | Array
+/metadata/:hex[?limit=1] | GET | [OP_RETURN data](https://bitcore.io/api/lib/transaction#Transaction+addData) | Metadata Object
 
 NOTE:
 
@@ -69,12 +69,14 @@ curl http://localhost:3001/opcodes/metadata/444f4350524f4f465efa245c88af3bc0bf9e
 This would return (for testnet):
 
 ```
-[
-  {
-    "hash": "00000000f959a5ed22dfa034f7957adbda91b3756700dbd29c640ca581bdba22", //blockhash
-    "height": "1287345",                                                        //blockheight
-    "txid": "30e24f7132635c6b278e9d505112788ca8234dfe15ac545288d33fb675dfdf4c", //tx hash
-    "outputIndex": "0"                                                          //output index for sort
-  }
-]
+{
+  "items": [
+    {
+      "blockhash": "00000000f959a5ed22dfa034f7957adbda91b3756700dbd29c640ca581bdba22",
+      "blockheight": "1287345",
+      "txid": "30e24f7132635c6b278e9d505112788ca8234dfe15ac545288d33fb675dfdf4c",
+      "outputIndex": "0"
+    }
+  ]
+}
 ```
