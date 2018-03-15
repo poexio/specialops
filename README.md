@@ -81,3 +81,53 @@ This would return (for testnet):
   ]
 }
 ```
+### Protocols
+List all protocols
+
+Resource   | Method | Request Object | Return Object
+---------- | -------|----------------|---------------
+/protocols | GET    |                | Protocol Object
+
+* Usage:
+```bash
+curl http://localhost:3001/opcodes/protocols
+```
+
+This would return (for testnet):
+
+```
+{
+  "items": [
+    {
+      "protocol": "Proof of Existence",
+      "identifier": "DOCPROOF",
+      "prefix": "444f4350524f4f46",
+      "href": "/opcodes/metadata/444f4350524f4f46"
+    },
+    {
+      "protocol": "Po.et",
+      "identifier": "POET",
+      "prefix": "504f4554",
+      "href": "/opcodes/metadata/504f4554"
+    },
+    {
+      "protocol": "Omni",
+      "identifier": "Omni",
+      "prefix": "6f6d6e69",
+      "href": "/opcodes/metadata/6f6d6e69"
+    },
+    {
+      "protocol": "Stampd",
+      "identifier": "STAMPD##",
+      "prefix": "5354414d50442323",
+      "href": "/opcodes/metadata/5354414d50442323"
+    },
+    {
+      "protocol": "Eternity Wall",
+      "identifier": "EW",
+      "prefix": "4557",
+      "href": "/opcodes/metadata/4557"
+    }
+  ]
+}
+```
