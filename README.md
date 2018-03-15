@@ -49,7 +49,7 @@ Start bitcore-node, then you can access the service with `http://localhost:3001/
 ## API HTTP Endpoints
 We can support btc mainnet, testnet3 and regtest
 
-### Hash
+### Metadata
 Get the transactions that contain the metadata.
 
 Resource | Method | Request Object | Return Object
@@ -74,6 +74,7 @@ This would return (for testnet):
     {
       "blockhash": "00000000f959a5ed22dfa034f7957adbda91b3756700dbd29c640ca581bdba22",
       "blockheight": "1287345",
+      "metadata": "444f4350524f4f465efa245c88af3bc0bf9e4392976cedafd9a0de8d3f737ba0f48231b0f9262110",
       "txid": "30e24f7132635c6b278e9d505112788ca8234dfe15ac545288d33fb675dfdf4c",
       "outputIndex": "0"
     }
