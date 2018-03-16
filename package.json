@@ -1,14 +1,14 @@
 {
-  "name": "@poexio/bitcore-opcodes",
-  "version": "0.1.0",
-  "description": "OP_RETURN web service for bitcore-node",
+  "name": "specialops",
+  "version": "0.0.1",
+  "description": "A Bitcoin blockchain metadata web service for Bitcore Node",
   "scripts": {
     "docs": "jsdoc -d docs -R README.md lib",
     "test": "standard 'lib/**/*.js'"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/poexio/bitcore-opcodes.git"
+    "url": "git+ssh://git@github.com/poexio/specialops.git"
   },
   "author": "PoEx Co., Ltd",
   "license": "MIT",
