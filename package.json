@@ -1,6 +1,6 @@
 {
   "name": "specialops",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Bitcoin blockchain metadata web service for Bitcore Node",
   "scripts": {
     "docs": "jsdoc -d docs -R README.md lib",
