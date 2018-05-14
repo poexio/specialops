@@ -159,6 +159,8 @@ NOTE:
 
 Range of limit: [1, 100], default: 10
 
+Format of identifier: it has to be URL encoded
+
 * Usage:
 
 ```bash
