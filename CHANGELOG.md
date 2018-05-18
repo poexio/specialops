@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.0.5 - 2018-04-06
+
+### Added
+
+* Support non 2x length metadata (80 bytes maximum)
+
+### Changed
+
+* Unsubscribe block when we subscribe it
+* Update note for identifier
+
 ## 0.0.4 - 2018-04-06
 
 ### Fixed
