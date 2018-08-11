@@ -1,14 +1,14 @@
 {
-  "name": "specialops",
+  "name": "bitcore-specialops-btx",
   "version": "0.0.5",
-  "description": "A Bitcoin blockchain metadata web service for Bitcore Node",
+  "description": "A BitCore blockchain metadata web service for Bitcore Node",
   "scripts": {
     "docs": "jsdoc -d docs -R README.md lib",
     "test": "standard 'lib/**/*.js'"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/poexio/specialops.git"
+    "url": "git+ssh://git@github.com/dalijolijo/bitcore-specialops-btx.git"
   },
   "author": "PoEx Co., Ltd",
   "license": "MIT",
@@ -23,9 +23,9 @@
     "node": ">=8.9.0"
   },
   "bugs": {
-    "url": "https://github.com/poexio/bitcore-opcodes/issues"
+    "url": "https://github.com/dalijolijo/bitcore-specialops-btx/issues"
   },
-  "homepage": "https://github.com/poexio/bitcore-opcodes#readme",
+  "homepage": "https://github.com/dalijolijo/bitcore-specialops-btx#readme",
   "devDependencies": {
     "jsdoc": "^3.5.5",
     "standard": "^11.0.0"
