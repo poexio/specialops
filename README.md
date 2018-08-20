@@ -1,6 +1,6 @@
 ## Special Ops
 
-A Bitcoin blockchain metadata web service
+A BitCore blockchain metadata web service
 for [Bitcore Node](https://github.com/bitpay/bitcore-node).
 
 [OP_RETURN](https://en.bitcoin.it/wiki/OP_RETURN) is a script opcode used to
@@ -25,7 +25,7 @@ home directory:
 
 ```bash
 cd ~/mynode
-npm install --save specialops
+npm install --save bitcore-specialops-btx
 ```
 
 Add ___specialops___ as a dependency in `~/mynode/bitcore-node.json`:
@@ -46,18 +46,18 @@ Add ___specialops___ as a dependency in `~/mynode/bitcore-node.json`:
     "timestamp",
     "transaction",
     "web",
-    "insight-api",
-    "specialops"
+    "insight-api-btx",
+    "bitcore-specialops-btx"
   ],
   "datadir": "./data"
 }
 ```
 
-Start bitcore-node, then you can access the service with `http://localhost:3001/opcodes`.
+Start bitcore-node-btx, then you can access the service with `http://localhost:3001/opcodes`.
 
 ## API HTTP Endpoints
 
-We can support btc mainnet, testnet3 and regtest
+We can support btx mainnet, testnet3 and regtest
 
 ### Metadata
 
